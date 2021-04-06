@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Boids.unity
+- path: Assets/Scenes/Boids_MP.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

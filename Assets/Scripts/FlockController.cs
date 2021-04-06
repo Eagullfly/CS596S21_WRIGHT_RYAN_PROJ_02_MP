@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class FlockController : MonoBehaviour
 {
-
+    //public GameManager gManager;
     // The number of boids in the flock
     [SerializeField]
     private int flockSize = 20;
@@ -71,7 +71,7 @@ public class FlockController : MonoBehaviour
     private void Awake()
     {
         float posX, posY, posZ;
-
+        
         flockList = new List<Boid>(flockSize);
         for (int i = 0; i < flockSize; i++)
         {
@@ -96,6 +96,12 @@ public class FlockController : MonoBehaviour
         nextWaypoint = 0;
 
         //currentMode = "lazy";
+    }
+
+    private void Start()
+    {
+        //target = gManager.playerPrefab.transform;
+        
     }
 
     public string GetMode()
