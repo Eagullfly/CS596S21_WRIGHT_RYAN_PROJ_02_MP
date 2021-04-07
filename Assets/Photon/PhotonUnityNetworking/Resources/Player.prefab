@@ -154,9 +154,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1607389464878845058}
   - component: {fileID: 1607389464878845056}
-  - component: {fileID: 1607389464878845059}
   - component: {fileID: 1607389464878845070}
   - component: {fileID: 5932436408669183149}
+  - component: {fileID: 2596558163931745188}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -201,24 +201,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1607389464878845059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1607389464878845061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92aa3f90692b17a419e923e390e71f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 1607389464878845056}
-  speed: 12
-  gravity: -9.81
-  photonView: {fileID: 1607389464878845070}
-  playerCamera: {fileID: 1607389465738585606}
-  PlayerNameText: {fileID: 154227385689028837}
 --- !u!114 &1607389464878845070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,6 +240,24 @@ MonoBehaviour:
   m_SynchronizeRotation: 0
   m_SynchronizeScale: 0
   m_UseLocal: 1
+--- !u!114 &2596558163931745188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607389464878845061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c28118d9d4cacf409f3564c8cbcbda7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 1607389464878845056}
+  speed: 12
+  gravity: -9.81
+  photonView: {fileID: 1607389464878845070}
+  playerCamera: {fileID: 1607389465738585606}
+  PlayerNameText: {fileID: 154227385689028837}
 --- !u!1 &1607389465738585606
 GameObject:
   m_ObjectHideFlags: 0

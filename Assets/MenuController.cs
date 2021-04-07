@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviourPunCallbacks
 {
@@ -51,8 +52,10 @@ public class MenuController : MonoBehaviourPunCallbacks
 
     public void SinglePlayer()
     {
-        Debug.Log("Single");
+        SceneManager.LoadScene("Boids");
     }
+
+    
     public void MultiPlayer()
     {
         singleOrMultiplayer.SetActive(false);
