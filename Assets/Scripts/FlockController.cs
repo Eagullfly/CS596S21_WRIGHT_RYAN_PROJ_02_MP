@@ -71,14 +71,15 @@ public class FlockController : MonoBehaviour
     private void Awake()
     {
         float posX, posY, posZ;
-        
+        Color randColor = new Color(Random.value, Random.value, Random.value);
+
         flockList = new List<Boid>(flockSize);
         for (int i = 0; i < flockSize; i++)
         {
             //To avoid weird artifacts, we try to spawn the boids within radius rather than in the same position.
             spawnLocation = Random.insideUnitSphere * spawnRadius + transform.position;
             Boid boid = Instantiate(prefab, spawnLocation, transform.rotation) as Boid;
-
+            boid.GetComponent<MeshRenderer>().material.color = randColor;
             boid.transform.parent = transform;
             boid.FlockController = this;
             flockList.Add(boid);
@@ -100,7 +101,7 @@ public class FlockController : MonoBehaviour
 
     private void Start()
     {
-        //target = gManager.playerPrefab.transform;
+        //target = GameObject.Find("Player(Clone)").transform;
         
     }
 

@@ -37,6 +37,8 @@ public class MPPlayer : MonoBehaviour
             PlayerNameText.text = photonView.Owner.NickName;
             PlayerNameText.color = Color.cyan;
         }
+        //Color randColor = new Color(Random.value, Random.value, Random.value);
+        
     }
 
     // Update is called once per frame

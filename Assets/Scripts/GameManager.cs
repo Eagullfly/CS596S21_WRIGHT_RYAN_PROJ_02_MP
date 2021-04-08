@@ -7,6 +7,8 @@ using Photon.Pun;
 public class GameManager : MonoBehaviour
 {
     public GameObject playerPrefab;
+    public FlockController flockController;
+    public FlockingBehavior flockingBehavior;
     public GameObject gameCanvas;
     public GameObject sceneCamera;
     //public GameObject flockBehavior;
@@ -25,9 +27,14 @@ public class GameManager : MonoBehaviour
     {
         float randomValue = Random.Range(-1f, 1f);
 
-        PhotonNetwork.Instantiate(playerPrefab.name, new Vector3(this.transform.position.x * randomValue, this.transform.position.y, this.transform.position.z), Quaternion.identity, 0);
+        PhotonNetwork.Instantiate(playerPrefab.name, new Vector3(this.transform.position.x * randomValue, this.transform.position.y, this.transform.position.z * randomValue), Quaternion.identity, 0);
+        
+        //FlockController flock = Instantiate(flockController, transform.position, transform.rotation);
+        //FlockingBehavior flockB = Instantiate(flockingBehavior, transform.position, transform.rotation);
         gameCanvas.SetActive(false);
         sceneCamera.SetActive(false);
+        Color randColor = new Color(Random.value, Random.value, Random.value);
+        playerPrefab.GetComponentInChildren<MeshRenderer>().sharedMaterial.color = randColor;
         //flockBehavior.SetActive(true);
     }
 
@@ -65,6 +72,7 @@ public class GameManager : MonoBehaviour
 
     private void OnPhotonPlayerConnected(Photon.Realtime.Player player)
     {
+        
         GameObject obj = Instantiate(playerFeed, new Vector3(0, 0, 0), Quaternion.identity);
         obj.transform.SetParent(feedGrid.transform, false);
         obj.GetComponent<Text>().text = player.NickName + "joined the game";

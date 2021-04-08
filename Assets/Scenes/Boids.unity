@@ -252,8 +252,8 @@ MonoBehaviour:
   followWeight: 1
   prefab: {fileID: 6811918106928967485, guid: 9a0d7cd360da3bb40823dfc6d66b68cd, type: 3}
   spawnRadius: 3
-  boundsMin: {x: -30, y: 1, z: -30}
-  boundsMax: {x: 30, y: 31, z: 30}
+  boundsMin: {x: -75, y: 1, z: -75}
+  boundsMax: {x: 75, y: 50, z: 75}
   minDistance: 3
   target: {fileID: 1623971892}
   flockList: []
@@ -278,7 +278,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 292227045}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -710,7 +710,7 @@ GameObject:
   - component: {fileID: 914210594}
   - component: {fileID: 914210593}
   m_Layer: 5
-  m_Name: Button
+  m_Name: ExitButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1317,8 +1317,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1702395895}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.636019, y: 45.42242, z: -41.56417}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

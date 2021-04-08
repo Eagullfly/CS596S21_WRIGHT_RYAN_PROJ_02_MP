@@ -18,7 +18,7 @@ public class FlockingBehavior : MonoBehaviour
 
     void Start()
     {
-        //flock = GameObject.FindGameObjectWithTag("FlockController").GetComponent<FlockController>();
+        //flock = GameObject.Find("FlockController(Clone)").GetComponent<FlockController>();
     }
 
     void OnGUI()

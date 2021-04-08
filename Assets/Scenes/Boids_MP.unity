@@ -1722,7 +1722,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1984008515}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -129.08682, y: 20.450869, z: -5.0695076}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1741,6 +1741,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 1607389464878845061, guid: 153560788b97d7e4cb90ad9f20e6571b,
+    type: 3}
+  flockController: {fileID: 1518596661849103983, guid: 7a72a4aa4a77d554bb62506fa27325af,
+    type: 3}
+  flockingBehavior: {fileID: 1360905025138042927, guid: 6cc4b9668d7ae594bb927445d6a6aa25,
     type: 3}
   gameCanvas: {fileID: 1787862582}
   sceneCamera: {fileID: 963194225}
