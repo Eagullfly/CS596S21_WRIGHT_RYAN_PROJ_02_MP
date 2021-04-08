@@ -18,12 +18,12 @@ public class FlockingBehavior : MonoBehaviour
 
     void Start()
     {
-        //flock = GameObject.Find("FlockController(Clone)").GetComponent<FlockController>();
+        //flock = GameObject.FindGameObjectWithTag("FlockController").GetComponent<FlockController>();
     }
 
     void OnGUI()
     {
-        if(GUI.Button(new Rect((dropDownRect.x - 100), dropDownRect.y, dropDownRect.width, 25), ""))
+        if (GUI.Button(new Rect((dropDownRect.x - 100), dropDownRect.y, dropDownRect.width, 25), ""))
         {
             if (!show)
             {
@@ -40,17 +40,17 @@ public class FlockingBehavior : MonoBehaviour
 
             GUI.Box(new Rect(0, 0, dropDownRect.width, Mathf.Max(dropDownRect.height, (modes.Length * 25))), "");
 
-            for(int index = 0; index < modes.Length; index++)
+            for (int index = 0; index < modes.Length; index++)
             {
-                
-                if (GUI.Button(new Rect(0, (index*25), dropDownRect.height, 25), ""))
+
+                if (GUI.Button(new Rect(0, (index * 25), dropDownRect.height, 25), ""))
                 {
                     show = false;
                     indexNumber = index;
-                    
+
 
                 }
-                
+
                 GUI.Label(new Rect(5, (index * 25), dropDownRect.height, 25), modes[index]);
             }
             if (indexNumber == 0)
@@ -78,10 +78,10 @@ public class FlockingBehavior : MonoBehaviour
         else
         {
             GUI.Label(new Rect((dropDownRect.x - 95), dropDownRect.y, 300, 25), modes[indexNumber]);
-            
+
 
         }
     }
 
-    
+
 }
