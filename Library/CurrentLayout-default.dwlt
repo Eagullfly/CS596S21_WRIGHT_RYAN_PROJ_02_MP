@@ -460,19 +460,19 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Projects\CS596S21_WRIGHT_RYAN_PROJ_02_MP
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 138}
-    m_SelectedIDs: 26380000
-    m_LastClickedID: 14374
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: fe370000
+    m_LastClickedID: 14334
     m_ExpandedIDs: 00000000fe370000003800000238000004380000063800000838000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -626,7 +626,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 0ef8ffff2af8ffff2cf8ffff30f8ffff34f8ffff7af8ffff96f8ffff58faffff66faffff6cfaffff62fbffff
+      m_ExpandedIDs: 7ef0ffff1cf1ffff2ef1ffff3af1fffffef1ffff1af2ffff1cf2ffff20f2ffff24f2ffff6af2ffff88f2ffff44f4ffff4cf4ffff5cf4ffffb8f9ffff2efaffff60faffff62fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -879,7 +879,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 534
+    y: 533.2
     width: 1259
-    height: 249
+    height: 250
   m_ViewDataDictionary: {fileID: 0}
