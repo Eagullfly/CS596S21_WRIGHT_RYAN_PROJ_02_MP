@@ -19,6 +19,7 @@ public class MPPlayer : MonoBehaviour
     public PhotonView photonView;
     public GameObject playerCamera;
     public Text PlayerNameText;
+    public GameObject controlCanvas;
 
 
 
@@ -30,6 +31,7 @@ public class MPPlayer : MonoBehaviour
         if (photonView.IsMine)
         {
             playerCamera.SetActive(true);
+            controlCanvas.SetActive(true);
             PlayerNameText.text = PhotonNetwork.NickName;
         }
         else
