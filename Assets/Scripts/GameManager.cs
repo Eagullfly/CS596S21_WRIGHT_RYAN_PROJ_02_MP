@@ -15,8 +15,8 @@ public class GameManager : MonoBehaviour
     public GameObject disconnectUI;
     private bool off = false;
 
-    public GameObject playerFeed;
-    public GameObject feedGrid;
+    //public GameObject playerFeed;
+    //public GameObject feedGrid;
 
     private void Awake()
     {
@@ -70,7 +70,7 @@ public class GameManager : MonoBehaviour
         PhotonNetwork.LoadLevel("MainMenu");
     }
 
-    private void OnPhotonPlayerConnected(Photon.Realtime.Player player)
+    /*private void OnPhotonPlayerConnected(Photon.Realtime.Player player)
     {
         
         GameObject obj = Instantiate(playerFeed, new Vector3(0, 0, 0), Quaternion.identity);
@@ -87,5 +87,5 @@ public class GameManager : MonoBehaviour
         obj.GetComponent<Text>().text = player.NickName + "left the game";
         obj.GetComponent<Text>().color = Color.red;
 
-    }
+    }*/
 }
